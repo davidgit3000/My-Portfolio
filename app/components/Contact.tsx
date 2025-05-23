@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, FormEvent } from "react";
+import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { EnvelopeIcon, GlobeAltIcon } from "@heroicons/react/24/outline";
 import { ArrowPathIcon } from "@heroicons/react/24/solid";
@@ -235,7 +235,7 @@ export default function Contact() {
                     animate={{ opacity: 1, y: 0 }}
                     className="text-green-600 dark:text-green-400 text-center"
                   >
-                    Thank you for your message! I'll get back to you soon.
+                    Thank you for your message! I&apos;ll get back to you soon.
                   </motion.p>
                 )}
                 {status === 'error' && (

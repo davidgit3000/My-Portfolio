@@ -22,10 +22,10 @@ export default function Hero() {
         <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-16 md:gap-12 items-center">
           <div className="text-center sm:text-left md:order-2 max-w-xl mx-auto md:mx-0">
             <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-8 animate-fade-in leading-tight whitespace-nowrap">
-              Hi, I'm David<span className="text-blue-600 dark:text-blue-400 inline-block animate-wave">!</span>
+              Hi, I&apos;m David<span className="text-blue-600 dark:text-blue-400 inline-block animate-wave">!</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-10 animate-fade-in-delay-1 leading-relaxed">
-              A passionate software developer crafting beautiful and functional
+              I&apos;m a passionate Software Engineer crafting beautiful and functional
               web experiences. I specialize in building modern web applications
               with cutting-edge technologies.
             </p>

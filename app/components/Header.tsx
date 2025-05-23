@@ -46,7 +46,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <Link 
               href="/" 
-              onClick={(e) => {
+              onClick={() => {
                 // Allow default behavior (page reload)
                 setIsMenuOpen(false);
               }} 

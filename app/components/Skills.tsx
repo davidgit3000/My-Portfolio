@@ -6,8 +6,7 @@ import { motion, useInView } from 'framer-motion';
 import { 
   SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiHtml5,
   SiNodedotjs, SiExpress, SiMongodb, SiPostgresql,
-  SiGit, SiDocker, SiJenkins, SiJira,
-  SiJavascript, SiPython
+  SiGit, SiDocker, SiJavascript, SiPython
 } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
 import { TbApi } from 'react-icons/tb';
