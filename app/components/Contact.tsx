@@ -97,15 +97,6 @@ export default function Contact() {
                 <SiLinkedin className="w-5 h-5" />
                 <span>LinkedIn</span>
               </a>
-              <a
-                href="https://yourwebsite.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
-              >
-                <GlobeAltIcon className="w-5 h-5" />
-                <span>Portfolio Website</span>
-              </a>
             </div>
           </motion.div>
 
