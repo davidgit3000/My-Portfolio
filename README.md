@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# David Lam's Portfolio Website
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features smooth animations, dark mode support, and a contact form.
 
-First, run the development server:
+## 🌟 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Responsive Design**: Fully responsive layout that works on all devices
+- **Dark Mode**: Automatic and manual dark mode switching
+- **Smooth Animations**: Page sections animate on scroll using Framer Motion
+- **Contact Form**: Interactive contact form with real-time feedback
+- **Modern UI**: Clean and professional design with glassmorphism effects
+
+## 🛠️ Built With
+
+- [Next.js](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Framer Motion](https://www.framer.com/motion/) - Animations
+- [Getform.io](https://getform.io/) - Form handling
+- [Hero Icons](https://heroicons.com/) - Icons
+
+## 🚀 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/portfolio-website.git
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open [http://localhost:3000](http://localhost:3000)**
+
+## 📝 Project Structure
+
+```
+├── app/
+│   ├── components/     # React components
+│   ├── api/           # API routes
+│   └── page.tsx       # Main page
+├── public/            # Static assets
+└── styles/           # Global styles
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌈 Features Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Hero Section
+- Animated profile image with shadow effects
+- Smooth transitions on theme changes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### About Section
+- Animated content reveals on scroll
+- Responsive layout with cards
 
-## Learn More
+### Skills Section
+- Animated skill cards
+- Progress indicators
+- Categorized skills display
 
-To learn more about Next.js, take a look at the following resources:
+### Contact Section
+- Interactive contact form
+- Real-time form validation
+- Loading states and success/error messages
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📬 Contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+David Lam - [dlam1@cpp.edu](mailto:dlam1@cpp.edu)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Project Link: [https://github.com/davidgit3000/portfolio-website](https://github.com/davidgit3000/portfolio-website)
