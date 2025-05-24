@@ -25,18 +25,18 @@ const config: Config = {
         },
         'shadow-pulse': {
           '0%': {
-            'box-shadow': '0 0 0 0 rgba(37, 99, 235, 0.6)',
+            'box-shadow': '0 0 0 0 rgba(37, 99, 235, 0.4)',
             transform: 'scale(1)'
           },
           '50%': {
-            'box-shadow': '0 0 40px 20px rgba(37, 99, 235, 0.4)',
+            'box-shadow': '0 0 30px 15px rgba(37, 99, 235, 0.2)',
             transform: 'scale(1.02)'
           },
           '100%': {
-            'box-shadow': '0 0 0 0 rgba(37, 99, 235, 0.6)',
+            'box-shadow': '0 0 0 0 rgba(37, 99, 235, 0.4)',
             transform: 'scale(1)'
           }
-        },
+        }
       },
       animation: {
         'shadow-pulse': 'shadow-pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',

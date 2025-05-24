@@ -51,7 +51,7 @@
 }
 
 .animate-wave {
-  animation: wave 2.5s ease-in-out;
+  animation: wave 2.5s ease-in-out infinite;
 }
 
 .animate-fade-in {

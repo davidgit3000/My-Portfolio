@@ -52,7 +52,8 @@ export default function Hero() {
           <div className="relative w-full aspect-square max-w-md md:max-w-md mx-auto md:order-1 p-4 animate-fade-in">
             <div className="absolute inset-4 bg-blue-600/10 dark:bg-blue-400/10 rounded-full -z-10 translate-x-4 translate-y-4 animate-float"></div>
             <div className="w-full h-full rounded-full animate-shadow-pulse">
-              <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-gray-100 dark:border-gray-800 shadow-lg hover:scale-105 hover:border-blue-300 dark:hover:border-blue-500 transition-all duration-300 ease-in-out bg-white dark:bg-gray-900">
+              <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-gray-100 dark:border-gray-800 shadow-lg hover:scale-105 hover:border-blue-300 dark:hover:border-blue-500 transition-all duration-300 ease-in-out animate-fade-in bg-white dark:bg-gray-900">
+              <div className="absolute inset-0 rounded-full animate-shadow-pulse"></div>
                 <Image
                   src="/images/avatar.png"
                   alt="David's profile picture"
