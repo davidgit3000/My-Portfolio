@@ -79,7 +79,7 @@ export default function Projects() {
   };
 
   const handleDragEnd = (
-    e: any,
+    _: MouseEvent | TouchEvent | PointerEvent,
     { offset, velocity }: { offset: { x: number }; velocity: { x: number } }
   ) => {
     const swipe = swipePower(offset.x, velocity.x);
