@@ -1,11 +1,6 @@
 "use client";
 
-import {
-  AnimatePresence,
-  motion,
-  useInView,
-  wrap
-} from "framer-motion";
+import { AnimatePresence, motion, useInView, wrap } from "framer-motion";
 import Image from "next/image";
 import { useRef, useState } from "react";
 import {
@@ -65,7 +60,7 @@ const projects: Project[] = [
 
 export default function Projects() {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { amount: 0.3 });
   const [currentIndex, setCurrentIndex] = useState(0);
   const swipeConfidenceThreshold = 100;
   const swipePower = (offset: number, velocity: number) => {
@@ -92,23 +87,27 @@ export default function Projects() {
   };
 
   return (
-    <section
-      id="projects"
-      className="w-full py-20 px-4 bg-gray-50 dark:bg-gray-900 overflow-hidden"
-    >
+    <section id="projects" className="w-full py-20 px-4 bg-gray-50 dark:bg-gray-900 overflow-hidden">
       <div ref={ref} className="max-w-6xl mx-auto relative">
         <motion.div
-          style={{
-            transform: isInView ? "none" : "translateY(20px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 }
           }}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-white mb-16">
             Featured Projects
           </h2>
 
-          <div className="relative flex justify-center items-center">
+          <motion.div
+            className="relative flex justify-center items-center"
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 50 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
             <motion.button
               className="absolute left-4 z-10 p-2 rounded-full bg-white/80 dark:bg-gray-800/80 text-gray-800 dark:text-white shadow-lg hover:bg-white dark:hover:bg-gray-800 transition-all"
               onClick={() => paginate(-1)}
@@ -202,9 +201,14 @@ export default function Projects() {
                 </motion.div>
               </AnimatePresence>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="flex justify-center mt-8 gap-2">
+          <motion.div
+            className="flex justify-center mt-8 gap-2"
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 50 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
             {projects.map((_, index) => (
               <button
                 key={index}
@@ -217,7 +221,7 @@ export default function Projects() {
                 aria-label={`Go to slide ${index + 1}`}
               />
             ))}
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>
