@@ -49,6 +49,25 @@ export default function About() {
         >
           About Me
         </motion.h2>
+        <motion.div
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 50 }}
+          transition={{ duration: 0.5 }}
+          className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700 mb-12"
+        >
+          <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center md:text-left">Education</h3>
+          <div className="flex flex-col md:flex-row justify-between md:items-start gap-6">
+            <div className="text-center md:text-left">
+              <h4 className="text-2xl font-medium text-gray-900 dark:text-white mb-2">California State Polytechnic University, Pomona</h4>
+              <p className="text-lg text-gray-600 dark:text-gray-300 italic">Bachelor of Science in Computer Science, Minor in Data Science</p>
+            </div>
+            <div className="text-center md:text-right whitespace-nowrap">
+              <p className="text-lg text-gray-600 dark:text-gray-300">Pomona, CA</p>
+              <p className="text-lg text-gray-600 dark:text-gray-300">Aug. 2023 - Dec. 2025</p>
+            </div>
+          </div>
+        </motion.div>
+
         <div className="grid md:grid-cols-2 gap-12 items-stretch">
           <motion.div
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}

@@ -20,11 +20,11 @@ export default function Hero() {
     }
   };
   return (
-    <section className="w-full pt-40 md:pt-20 pb-20 px-4">
+    <section className="w-full pt-32 3xl:pt-20 pb-20 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-16 md:gap-12 items-center">
           <div className="text-center sm:text-left md:order-2 max-w-xl mx-auto md:mx-0">
-            <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-8 animate-fade-in leading-tight whitespace-nowrap">
+            <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-8 animate-fade-in leading-tight whitespace-nowrap">
               Hi, I&apos;m David
               <span className="text-blue-600 dark:text-blue-400 inline-block animate-wave">
                 !
@@ -68,6 +68,23 @@ export default function Hero() {
                   priority
                 />
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
+          <div className="grid grid-cols-3 gap-8 animate-fade-in-delay-2">
+            <div className="text-center">
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">8+</div>
+              <div className="text-sm text-gray-600 dark:text-gray-400">Projects<br />Completed</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">8+</div>
+              <div className="text-sm text-gray-600 dark:text-gray-400">Technologies<br />Mastered</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">300+</div>
+              <div className="text-sm text-gray-600 dark:text-gray-400">Code<br />Commits</div>
             </div>
           </div>
         </div>
