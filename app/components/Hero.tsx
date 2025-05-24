@@ -29,11 +29,11 @@ export default function Hero() {
               web experiences. I specialize in building modern web applications
               with cutting-edge technologies.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-delay-2">
+            <div className="flex flex-col lg:flex-row gap-4 animate-fade-in-delay-2">
               <a
                 href="#contact"
                 onClick={(e) => handleScroll(e, '#contact')}
-                className="inline-block bg-blue-600 dark:bg-blue-500 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 dark:hover:bg-blue-600 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-md hover:shadow-blue-300"
+                className="inline-flex items-center justify-center bg-blue-600 dark:bg-blue-500 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 dark:hover:bg-blue-600 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-md hover:shadow-blue-300"
               >
                 Contact me
               </a>
@@ -42,10 +42,10 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 // download="David_Lam_resume.pdf"
-                className="inline-flex items-center gap-2 bg-slate-300 dark:bg-slate-700 text-gray-900 dark:text-white px-8 py-3 rounded-lg font-medium hover:bg-slate-400 dark:hover:bg-slate-600 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-md hover:shadow-slate-300"
+                className="inline-flex items-center justify-center gap-2 bg-slate-300 dark:bg-slate-700 text-gray-900 dark:text-white px-8 py-3 rounded-lg font-medium hover:bg-slate-400 dark:hover:bg-slate-600 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-md hover:shadow-slate-300"
               >
                 <DocumentIcon className="h-5 w-5" />
-                View my resume
+                <span className="text-center">View my resume</span>
               </a>
             </div>
           </div>
